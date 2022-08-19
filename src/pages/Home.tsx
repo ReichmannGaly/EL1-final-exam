@@ -12,7 +12,7 @@ const HomePage: React.FunctionComponent<IHomePageProps> = (props) => {
     return (
         <div className='d-flex align-items-center justify-content-center mt-5 mx-auto container my-4'>
             <MDBCol md='6' className='text-center mt-5'>
-                <h2>You are connected!</h2>
+                <h2>Welcome {auth.currentUser?.displayName}!</h2>
                 <button type="button" className="btn btn-primary mt-3" onClick={() => signOut(auth)}>Sign out</button>
             </MDBCol>
         </div>
