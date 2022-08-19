@@ -1,0 +1,16 @@
+#mainContainer {
+    position: relative;
+}
+#container {
+    position: absolute;
+    top: 8vh;
+    width: 30%;
+    box-shadow:0 2px 6px -1px rgba(0,0,0,.07),0 6px 18px -1px rgba(0,0,0,.04)
+}
+@media only screen and (max-width: 900px) {
+
+    #container {
+        width: 100%;
+        box-shadow: none;
+    }
+}
