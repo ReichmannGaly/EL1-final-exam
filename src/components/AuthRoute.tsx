@@ -1,6 +1,7 @@
 import React, {PropsWithChildren, useEffect, useState} from 'react';
 import { useNavigate } from "react-router-dom";
 import { getAuth,onAuthStateChanged } from 'firebase/auth';
+import LoadingSpinner from "./LoadingSpinner";
 
 export interface AuthRouteProps extends PropsWithChildren{}
 
@@ -24,7 +25,7 @@ const AuthRoute: React.FunctionComponent<AuthRouteProps> = props => {
         }
     });
 
-    if(loading) return <p>loading...</p>
+    if(loading) return <LoadingSpinner/>
 
     return (
         <>
